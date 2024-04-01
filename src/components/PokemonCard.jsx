@@ -12,6 +12,7 @@ function PokemonCard({ pokemon }) {
       </figcaption>{" "}
     </>
   ) : (
+    
     <>
       {" "}
       <img src={pokemon.imgSrc} />{" "}
@@ -28,6 +29,7 @@ PokemonCard.propTypes = {
   }).isRequired,
 };
 
+export default PokemonCard;
 // pokemon ()
 // console.log(pokemon.name);
 // console.log(pokemon.imgSrc);
@@ -50,4 +52,4 @@ PokemonCard.propTypes = {
 
 // A faire pour la quête condition ternaire
 
-export default PokemonCard;
+
