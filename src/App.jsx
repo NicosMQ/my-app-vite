@@ -1,5 +1,6 @@
 import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 
@@ -31,10 +32,17 @@ function App() {
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
     },
   ];
+
+    useEffect(
+    () => {
+      alert("hello pokemon trainer :)")
+    },
+    []
+  );
   return (
     <>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <NavBar pokemonIndex = {pokemonIndex} pokemonList= {pokemonList} setpokemonIndex={setpokemonIndex}/>
+      <NavBar pokemonIndex = {pokemonIndex} pokemonList= {pokemonList} setpokemonIndex={setpokemonIndex} pokemon={pokemonList} />
 
     </>
   );

@@ -4,22 +4,21 @@ function PokemonCard({ pokemon }) {
   
 
   return !pokemon.imgSrc ? (
-    <>
-      {" "}
-      <p> ??? </p>{" "}
-      <figcaption>
-        <h1>{pokemon.name}</h1>
-      </figcaption>{" "}
-    </>
+        <>
+          <p> ??? </p>
+          <figcaption>
+            <h1>{pokemon.name}</h1>
+          </figcaption>
+        </>
   ) : (
     
-    <>
-      {" "}
-      <img src={pokemon.imgSrc} />{" "}
-      <figcaption>
-        <h1>{pokemon.name}</h1>
-      </figcaption>{" "}
-    </>
+        <>
+          {" "}
+          <img src={pokemon.imgSrc} />
+          <figcaption>
+            <h1>{pokemon.name}</h1>
+          </figcaption>
+        </>
   );
 }
 PokemonCard.propTypes = {
@@ -30,26 +29,5 @@ PokemonCard.propTypes = {
 };
 
 export default PokemonCard;
-// pokemon ()
-// console.log(pokemon.name);
-// console.log(pokemon.imgSrc);
-
-// Solution condition if
-// if (!pokemon.imgSrc) {
-//   return (
-//     <>
-//       <p>???</p>
-//       <figcaption>{pokemon.name}</figcaption>
-//     </>
-//   );
-// } else {
-//   return (
-//     <figure>
-//       <img src={pokemon.imgSrc} />
-//       <figcaption>{pokemon.name}</figcaption>
-//     </figure>
-//   )};
-
-// A faire pour la quête condition ternaire
 
 
